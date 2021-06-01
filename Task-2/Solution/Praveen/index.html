@@ -19,23 +19,31 @@
 
     <form>
          <!-- =============================Starting================================ -->
-        <div class="input">
+        
+       <div class="pad">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" placeholder="Enter your name">
+       </div>
 
+        <div class="pad">
             <label for="mail">Email</label>
             <input id="mail" name="email" type="email" placeholder="Enter your Email">
+        </div>
 
-            <label for="age">Age <span>(optional)</span></label>
+        <div class="pad">
+            <label for="age">Age <span class="opt">(optional)</span></label>
             <input id="age" name="age" type="number" placeholder="Age">
+        </div>
 
+        <div class="pad">
             <label for="role">Which option best describes your current role?</label>
             <input id="role" name="role" type="text" placeholder="Select current role">
         </div>
+        
 
         <!-- ======================Radio-Buttons=============================== -->
 
-        <h3>Would you recommend freeCodeCamp to a friend?</h3>
+        <h3 class="pad">Would you recommend freeCodeCamp to a friend?</h3>
 
 
         <div class="row">
@@ -55,12 +63,16 @@
 
         <!-- =================================================================== -->
 
-        <label for="fav">What is your favourite feature of freeCodeCamp?</label>
-        <input id="fav" type="text" placeholder="Select an option">
+        <div class="pad">
+            <label class="pad"  for="fav">What is your favourite feature of freeCodeCamp?</label>
+            <input id="fav" name="favor" type="text" placeholder="Select an option">
+        </div> 
 
         <!-- =======================check-Box================================ -->
 
-        <label for="opt">What would you like to see improved?</label>
+        <div class="pad">
+            <label class="pad" for="opt">What would you like to see improved? <span class="opt">(check all that apply)</span></label>
+        </div>
 
         <div class="row">
             <input type="checkbox" name="improvements" value="Front-End">
@@ -119,12 +131,14 @@
 
         <!-- ===========================textarea================================== -->
 
-        <label for="comment">Any comments or suggestions ?</label>
-        <textarea name="comment" cols="40" rows="5" id="comment" placeholder="Enter your comments here..."></textarea>
+        <div class="pad">
+            <label for="comment">Any comments or suggestions ?</label>
+            <textarea name="comment" cols="40" rows="5" id="comment" placeholder="Enter your comments here..."></textarea>
+        </div>
 
         <!-- =============================button==================================== -->
 
-        <div class="row">
+        <div class="pad" class="row">
             <button type="submit">Submit</button>
         </div>
 
