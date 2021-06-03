@@ -1,0 +1,85 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+      115deg,
+      rgba(80, 80, 186, 0.7),
+      rgba(80, 80, 186, 0.7)
+    ),
+    url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+  background-size: cover;
+  color: white;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+header p {
+  font-size: 0.8rem;
+}
+form {
+  width: 75vh;
+  margin: auto;
+  background-color: rgba(27, 27, 50, 0.8);
+  padding: 25px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+}
+.input input,
+#fav,
+form textarea {
+  padding: 0.35rem;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 3px;
+  margin-top: 3px;
+}
+input:focus,
+textarea:focus {
+  transform: scale(1.01);
+  outline: none;
+}
+
+.input .input-row,
+.radio,
+.checkbox {
+  margin: 15px 0px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+.row label {
+  margin-left: 10px;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+}
+form input[type="radio"],
+form input[type="checkbox"] {
+  width: fit-content;
+}
+button {
+  margin: 15px 0px;
+  font-size: 1rem;
+  padding: 0.75rem;
+  background-color: #2ac465;
+  border-radius: 4px;
+  color: white;
+  border: none;
+}
+button:hover {
+  background-color: #129b47;
+  transform: scale(1.01);
+}
